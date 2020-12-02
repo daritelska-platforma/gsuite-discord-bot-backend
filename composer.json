@@ -1,0 +1,15 @@
+{
+    "name": "daritelska-platforma/gsuite-discord-bot-backend",
+    "description": "A Discord bot allowing (hopefully) easy 2-way sync of events between Discord and GSuite / Calendar (PHP Backend)",
+    "type": "project",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "Martin Kovachev",
+            "email": "miracle@nimasystems.com"
+        }
+    ],
+    "require": {
+        "team-reflex/discord-php": "^5.0"
+    }
+}
