@@ -7,9 +7,15 @@
         {
             "name": "Martin Kovachev",
             "email": "miracle@nimasystems.com"
+        },
+        {
+    	    "name": "Ovanes Budakyan",
+    	    "email": "email@email.com" 
         }
     ],
     "require": {
-        "team-reflex/discord-php": "^5.0"
+	"php": ">=7.3",
+        "team-reflex/discord-php": "^5.0",
+        "google/apiclient": "^2.8"
     }
 }
