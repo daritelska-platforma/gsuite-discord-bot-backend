@@ -1,0 +1,19 @@
+name: deploy_docker_compose
+on: [push]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deployment
+        uses: TapTap21/docker-remote-deployment-action@v1.0
+        with:
+          remote_docker_host: ${{ secrets.REMOTE_DOCKER_HOST }}
+          ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
+          stack_file_name: docker-compose.yml
+          deployment_mode: docker-compose
+          docker_login_password: ${{ secrets.DOCKER_REPO_PASSWORD }}
+          docker_login_user: ${{ secrets.DOCKER_REPO_USERNAME }}
+          docker_login_registry: ${{ steps.login-ecr.outputs.registry }}
+          args: -p gsuite_app up -d
+          pull_images_first: true
