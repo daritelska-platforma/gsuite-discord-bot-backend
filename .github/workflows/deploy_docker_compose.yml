@@ -12,3 +12,4 @@ jobs:
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           stack_file_name: docker-compose.yml
           args: -p gsuite_app up -d
+
