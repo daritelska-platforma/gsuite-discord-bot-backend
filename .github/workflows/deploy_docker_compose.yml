@@ -11,9 +11,7 @@ jobs:
           ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           stack_file_name: docker-compose.yml
-          deployment_mode: docker-compose
           docker_login_password: ${{ secrets.DOCKER_REPO_PASSWORD }}
           docker_login_user: ${{ secrets.DOCKER_REPO_USERNAME }}
           docker_login_registry: ${{ steps.login-ecr.outputs.registry }}
           args: -p gsuite_app up -d
-          pull_images_first: true
