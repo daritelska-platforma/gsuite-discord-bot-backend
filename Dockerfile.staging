@@ -50,7 +50,7 @@ WORKDIR /var/www/html
 COPY --chown=nobody ./src/ /var/www/html/
 
 # Run composer
-RUN /usr/local/bin/composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader
+RUN cd /var/www/html/public && /usr/local/bin/composer install --no-ansi --no-dev --no-interaction --no-plugins --no-progress --no-scripts --optimize-autoloader
 
 # Expose the port nginx is reachable on
 EXPOSE 8080
