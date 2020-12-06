@@ -13,5 +13,5 @@ jobs:
           ssh_public_key: ${{ secrets.SSH_PUBLIC_KEY }}
           ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           stack_file_name: docker-compose.staging.yml
-          args: -p gsuite_app_staging up -d
+          args: -p gsuite_app_staging up -d --build
 
