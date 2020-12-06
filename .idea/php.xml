@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpIncludePathManager">
+    <include_path>
+      <path value="$PROJECT_DIR$/src/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/src/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/src/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/react/promise-timer" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/src/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/src/vendor/ratchet/rfc6455" />
+      <path value="$PROJECT_DIR$/src/vendor/ratchet/pawl" />
+      <path value="$PROJECT_DIR$/src/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/src/vendor/ringcentral/psr7" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/src/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/src/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/src/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/src/vendor/trafficcophp/bytebuffer" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/src/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/src/vendor/google/auth" />
+      <path value="$PROJECT_DIR$/src/vendor/google/apiclient-services" />
+      <path value="$PROJECT_DIR$/src/vendor/google/apiclient" />
+      <path value="$PROJECT_DIR$/src/vendor/phpseclib/phpseclib" />
+      <path value="$PROJECT_DIR$/src/vendor/mollie/polyfill-libsodium" />
+      <path value="$PROJECT_DIR$/src/vendor/react/partial" />
+      <path value="$PROJECT_DIR$/src/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/src/vendor/react/datagram" />
+      <path value="$PROJECT_DIR$/src/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/src/vendor/react/promise-stream" />
+      <path value="$PROJECT_DIR$/src/vendor/react/http" />
+      <path value="$PROJECT_DIR$/src/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/src/vendor/firebase/php-jwt" />
+      <path value="$PROJECT_DIR$/src/vendor/team-reflex/discord-php" />
+      <path value="$PROJECT_DIR$/src/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/src/vendor/composer" />
+    </include_path>
+  </component>
+  <component name="PhpProjectSharedConfiguration" php_language_level="7.3">
+    <option name="suggestChangeDefaultLanguageLevel" value="false" />
+  </component>
+</project>

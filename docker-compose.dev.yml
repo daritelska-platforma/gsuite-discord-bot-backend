@@ -12,7 +12,7 @@ services:
     ports:
       - "8999:8080"
     volumes:
-      - ".:/var/www/html"
+      - "./src:/var/www/html"
 networks:
   app-network:
     driver: bridge
