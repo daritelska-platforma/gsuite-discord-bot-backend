@@ -1,5 +1,8 @@
 name: deploy_docker_compose
-on: [push]
+on:
+  push:
+    branches:
+      - staging
 jobs:
   deploy:
     runs-on: ubuntu-latest
