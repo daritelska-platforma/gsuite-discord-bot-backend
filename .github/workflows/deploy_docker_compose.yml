@@ -13,7 +13,7 @@ jobs:
         env:
           GCLOUD_SERVICE_ACCOUNT_JSON: ${{ secrets.GCLOUD_SERVICE_ACCOUNT_JSON }}
         run: |
-          mkdir -p ./src/config/dev/service_account/ && echo "$env:GCLOUD_SERVICE_ACCOUNT_JSON" > ./src/config/dev/service_account/gcloud_service_account.json
+          mkdir -p ./src/config/dev/service_account/ && echo "$GCLOUD_SERVICE_ACCOUNT_JSON" > ./src/config/dev/service_account/gcloud_service_account.json
       - name: Dev
         uses: TapTap21/docker-remote-deployment-action@v1.0
         with:
