@@ -3,7 +3,7 @@
 require_once('Cal.class.php');
 
 
-$cal = new Cal();
+$cal = new Cal('dev');
 $s = $cal->getCalendarService();
 
 // demo to create a simple randomized event

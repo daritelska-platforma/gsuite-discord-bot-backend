@@ -2,14 +2,19 @@ name: deploy_docker_compose
 on:
   push:
     branches:
-      - staging
+      - dev
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
-      - name: Staging
+      - name: Prepare Dev Env
+        env:
+          GCLOUD_SERVICE_ACCOUNT_JSON: ${{ secrets.GCLOUD_SERVICE_ACCOUNT_JSON }}
+        run: |
+          mkdir -p ./src/config/dev/service_account/ && echo "$env:GCLOUD_SERVICE_ACCOUNT_JSON" > ./src/config/dev/service_account/gcloud_service_account.json
+      - name: Dev
         uses: TapTap21/docker-remote-deployment-action@v1.0
         with:
           remote_docker_host: ${{ secrets.REMOTE_DOCKER_HOST }}

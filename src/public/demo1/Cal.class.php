@@ -3,6 +3,7 @@
 class Cal
 {
     const DEFAULT_TZ = 'UTC';
+    const DEFAULT_ENV = 'prod';
 
     /**
      * @var Google_Client
@@ -14,13 +15,23 @@ class Cal
      */
     private $calendar_service;
 
+    /**
+     * @var string
+     */
+    private string $env;
+
+    public function __construct(string $env = self::DEFAULT_ENV)
+    {
+        $this->env = $env;
+    }
+
     public function getGoogleCalendarConfig(): array
     {
         return [
             'application_name' => 'DaritelskaPlatforma',
             'account_id' => 'discordsync@probnata.com',
             'calendar_id' => 'c_lni854tglkj2m1h2m4a7pab3os@group.calendar.google.com',
-            'credentials_file' => '../config/private/service_account/gclouddiscordsync-3a4346dc1094.json',
+            'credentials_file' => '../config/' . $this->env . '/service_account/gcloud_service_account.json',
         ];
     }
 
