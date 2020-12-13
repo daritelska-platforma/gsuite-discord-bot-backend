@@ -1,0 +1,3 @@
+api_platform:
+    http_cache:
+        vary: ['Content-Type', 'Authorization', 'Origin']
