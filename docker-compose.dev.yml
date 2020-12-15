@@ -1,19 +1,6 @@
 version: '3'
-services:
-  app:
-    build:
-      context: .
-      dockerfile: Dockerfile.dev
-    container_name: gsuite_discord_app_dev
-    restart: unless-stopped
-    tty: true
-    networks:
-      - app-network
-    ports:
-      - "8999:8080"
-    volumes:
-      - "./src/public:/var/www/html"
 
+services:
   php:
     build:
       context: ./api
