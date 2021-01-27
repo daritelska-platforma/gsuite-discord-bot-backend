@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+  # Nginx Service
+  nginx:
+    container_name: nginx
+    image: nginx:alpine
+    ports:
+      - "8989:80"
+    volumes:
+      - ../gsuite_discord_bot:/gsuite_discord_bot
+      - ./nginx/conf.d:/etc/nginx/conf.d
+      - /etc/localtime:/etc/localtime
+    networks:
+      - nginxphp
+
+  # PHP Service
+  php:
+    container_name: php7.4
+    build:
+      context: ./php
+    environment:
+      - APP_ENV=${APP_ENV}
+      - APP_SECRET=${APP_SECRET}
+      - DATABASE_URL=mysql://${DATABASE_USER}:${DATABASE_PASSWORD}@database:3306/${DATABASE_NAME}?serverVersion=5.7
+    volumes:
+      - ../gsuite_discord_bot:/gsuite_discord_bot
+    expose:
+      - 9000
+    networks:
+      - nginxphp
+
+networks:
+  nginxphp:
+
