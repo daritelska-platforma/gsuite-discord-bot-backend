@@ -43,13 +43,13 @@ services:
       - caddy_config:/config
     ports:
       - target: 80
-        published: 80
+        published: 800
         protocol: tcp
       - target: 443
-        published: 443
+        published: 4433
         protocol: tcp
       - target: 443
-        published: 443
+        published: 4433
         protocol: udp
 
   database:
